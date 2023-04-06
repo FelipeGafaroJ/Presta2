@@ -2,7 +2,7 @@
   "name": "presta2",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/FelipeGafaroJ/Presta2#readme",
   "devDependencies": {
     "electron": "^24.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
   }
 }
