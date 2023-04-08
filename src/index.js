@@ -1,5 +1,9 @@
-const {createWindow} = require ('./main')
-const { app } = require('electron')
+const { createWindow } = require("./main");
+const { app } = require("electron");
 
-// Cuando la aplicación esté lista, crea la ventana.
-app.whenReady().then(createWindow)
+require('./database');
+
+require('electron-reload')(__dirname);
+
+app.allowRendererProcessReuse = true;
+app.whenReady().then(createWindow);

@@ -1,5 +1,16 @@
 const { app, BrowserWindow } = require('electron')
 
+
+const { getConnection } = require("./database");
+
+function hello(){
+  console.log('hi world')
+}
+
+
+
+
+
 function createWindow () {
   // Crea una ventana del navegador.
   let win = new BrowserWindow({
@@ -15,7 +26,8 @@ function createWindow () {
 }
 
 module.exports ={
-  createWindow
+  createWindow,
+  hello
 }
 
 
